@@ -50,7 +50,7 @@ gsap.to(".nav", {
   scrollTrigger: {
     trigger: "#page3",
     scroller: "body",
-    start: "top 15%",
+    start: "top 14%",
     end: "bottom",
     scrub: 1,
   },

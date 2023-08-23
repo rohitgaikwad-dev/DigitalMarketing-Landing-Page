@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 
 * {
   margin: 0;
@@ -47,6 +48,7 @@ body {
 }
 
 .navright a {
+  font-size: 1vw;
   text-decoration: none;
   color: #222;
   margin: 1.25rem;
@@ -64,11 +66,11 @@ body {
 }
 
 .navright a i {
-  font-size: 1rem;
+  font-size: 1vw;
   padding-left: 0.5rem;
 }
 
-.navright a:nth-last-child(1) #green {
+.navright a:nth-last-child(1) .green {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -79,12 +81,13 @@ body {
   z-index: -1;
 }
 
-.navright a:nth-last-child(1):hover #green {
+.navright a:nth-last-child(1):hover .green {
   left: 0;
 }
 
 #page1 h1 {
-  font-size: 5vw;
+  font-family: Lato;
+  font-size: 5.6vw;
   font-weight: 100;
   text-transform: capitalize;
   position: relative;
@@ -97,35 +100,35 @@ body {
 #page1 h1::after {
   content: "";
   position: absolute;
-  width: 35%;
-  height: 16px;
+  width: 45%;
+  height: 2vh;
   background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
   background-size: cover;
-  bottom: 5%;
+  bottom: -3%;
   left: 50%;
   transform: translate(-50%, 0);
 }
 
 #page1 #img1 {
-  width: 270px;
-  height: 400px;
+  width: 23vw;
+  height: 58vh;
   position: absolute;
-  left: 6%;
+  left: 5%;
   top: 20%;
 }
 #page1 #img2 {
-  width: 255px;
-  height: 215px;
+  width: 17vw;
+  height: 30vh;
   position: absolute;
   right: 25%;
   top: 15%;
 }
 #page1 #img3 {
-  width: 300px;
-  height: 300px;
+  width: 20vw;
+  height: 33vh;
   position: absolute;
   right: 7%;
-  top: 55%;
+  top: 50%;
 }
 
 #page1 img {
@@ -137,8 +140,8 @@ body {
 }
 
 #page2 {
-  height: 70vh;
-  width: 100%;
+  height: 60vh;
+  width: 100vw;
   background-color: #000;
   position: relative;
   display: flex;
@@ -149,10 +152,11 @@ body {
 }
 
 #page2 h5 {
-  font-size: 1rem;
+  font-size: 1.5vw;
   font-family: poppins;
   font-weight: 500;
   position: relative;
+  letter-spacing: -1.8px;
 }
 
 #page2 h5::before {
@@ -167,10 +171,10 @@ body {
 }
 
 #page2 h1 {
-  font-size: 3rem;
+  font-size: 3vw;
   font-family: kanit;
-  margin: 2rem 0;
-  width: 70%;
+  margin: 1.5vw 0;
+  width: 60%;
   text-align: center;
   font-weight: 100;
   position: relative;
@@ -179,11 +183,11 @@ body {
 #page2 h1::after {
   content: "";
   position: absolute;
-  width: 230px;
-  height: 70px;
+  width: 14vw;
+  height: 8vh;
   background-image: url(https://thisisdigital.co.uk/dist/images/circle-green.svg);
   bottom: 0;
-  left: 25%;
+  left: 28%;
 }
 
 #about-us {
@@ -212,7 +216,118 @@ body {
   font-size: 2.5rem;
 }
 
-#page3{
-    height: 100%;
-    width: 100%;
+#page3 {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#page3 .images {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+#page3 .images img {
+  position: absolute;
+}
+
+#page3 .images #p3_img1 {
+  width: 26vw;
+  height: 28vh;
+  top: 0;
+  left: 27%;
+}
+
+#page3 .images #p3_img2 {
+  width: 35vw;
+  height: 56vh;
+  top: 30%;
+  left: 27%;
+}
+
+#page3 .images #p3_img3 {
+  width: 12vw;
+  height: 56vh;
+}
+
+#page3 .images #p3_img4 {
+  width: 12vw;
+  height: 32vh;
+  top: 60%;
+}
+
+.content {
+  width: 45%;
+  height: 100%;
+}
+
+.contentbtm {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contentbtm h1{
+  font-family: lato;
+  font-size: 4.5vw;
+  position: relative;
+}
+
+.contentbtm h1::after{
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 2vh;
+  background-image: url(https://thisisdigital.co.uk/dist/images/underline-green.svg);
+  background-size: cover;
+  top: 45%;
+  left: 45%;
+  transform: translate(-50%, 0);
+}
+
+.contentbtm p{
+  font-size: 1.2vw;
+  font-weight: 100;
+  margin: 5vh 0vh;
+}
+
+.contentbtm a{
+  font-size: 1.5vw;
+  padding: 0.5rem 1rem;
+  color: #000;
+  border-radius: 10rem;
+  border: 1px solid #000;
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  justify-content: space-between;
+  text-decoration: none;
+}
+
+.contentbtm a i{
+  font-size: 1.5vw;
+  position: relative;
+  top: 3px;
+  padding-left: 0.5rem;
+}
+
+.contentbtm a .green{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  background-color: #00eb8f;
+  transition: left 0.4s ease;
+  z-index: -1;
+}
+
+.contentbtm a:hover .green{
+  left: 0;
 }
