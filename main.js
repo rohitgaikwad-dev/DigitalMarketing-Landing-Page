@@ -27,7 +27,7 @@ tl.from(
   "-=0.8"
 );
 tl.from(
-  "#main h1",
+  "#age1 h1",
   {
     delay: 0.3,
     opacity: 0,
@@ -37,11 +37,22 @@ tl.from(
 );
 
 gsap.from("#page2 h5,#page2 h1, #about-us", {
-  opacity: 0,
-  stagger: 0.2,
   scrollTrigger: {
     trigger: "#page2 h5",
     scroller: "body",
-    start: 'top 80%',
+    start: "top 80%",
   },
+  opacity: 0,
+  stagger: 0.2,
+});
+
+gsap.to(".nav", {
+  scrollTrigger: {
+    trigger: "#page3",
+    scroller: "body",
+    start: "top 15%",
+    end: "bottom",
+    scrub: 1,
+  },
+  top: '-100%',
 });

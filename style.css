@@ -31,6 +31,8 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #fff;
+  z-index: 10;
 }
 
 .nav > h1 {
@@ -81,17 +83,18 @@ body {
   left: 0;
 }
 
-#main > h1 {
-  font-size: 5.4vw;
+#page1 h1 {
+  font-size: 5vw;
   font-weight: 100;
   text-transform: capitalize;
   position: relative;
-  width: 60%;
+  left: 10%;
+  width: 70%;
   text-align: center;
   z-index: 1;
 }
 
-#main > h1::after {
+#page1 h1::after {
   content: "";
   position: absolute;
   width: 35%;
@@ -103,21 +106,21 @@ body {
   transform: translate(-50%, 0);
 }
 
-#main #img1 {
+#page1 #img1 {
   width: 270px;
   height: 400px;
   position: absolute;
   left: 6%;
   top: 20%;
 }
-#main #img2 {
+#page1 #img2 {
   width: 255px;
   height: 215px;
   position: absolute;
   right: 25%;
   top: 15%;
 }
-#main #img3 {
+#page1 #img3 {
   width: 300px;
   height: 300px;
   position: absolute;
@@ -125,11 +128,11 @@ body {
   top: 55%;
 }
 
-#main img {
+#page1 img {
   transition: margin 0.8s ease;
 }
 
-#main img:hover {
+#page1 img:hover {
   margin-top: -10px;
 }
 
